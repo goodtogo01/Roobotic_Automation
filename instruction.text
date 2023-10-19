@@ -1,0 +1,17 @@
+Open allure report
+
+Prerequestie: 
+Make sure I have below component ready such as- 
+download allore -- https://github.com/allure-framework/allure2/releases
+setup Environment variable as from drive location inclued bin folder
+
+Step 2. 
+add maven dependency of "allure testng"
+create testng test
+run testng test once
+refresh entire project from the project folder
+right clicd on allure-results -> Properties -> open in drive
+copy entire path in cmd 
+once in path directory run with allure serve >>>> BOOM----NEW BROWSER WILL BE OPNE WITH ALLURE REPORT
+
+THATS ALL
