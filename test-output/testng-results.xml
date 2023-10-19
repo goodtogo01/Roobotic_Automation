@@ -1,89 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T00:53:45 EDT" name="Robotic Applicaion Automated Tess" finished-at="2023-10-19T00:54:13 EDT" duration-ms="28423">
+  <suite started-at="2023-10-19T16:22:52 EDT" name="Default suite" finished-at="2023-10-19T16:23:41 EDT" duration-ms="49761">
     <groups>
-      <group name="Desh Board  Functions">
-        <method signature="DeshBoardHomeTest.salseDataTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Tests.DeshBoardHomeTest@1de9d54]" name="salseDataTest" class="com.Tests.DeshBoardHomeTest"/>
-      </group> <!-- Desh Board  Functions -->
-      <group name="Desh Board Page Functions">
-        <method signature="DeshBoardHomeTest.pageTitleTest()[pri:1, instance:com.Tests.DeshBoardHomeTest@1de9d54]" name="pageTitleTest" class="com.Tests.DeshBoardHomeTest"/>
-      </group> <!-- Desh Board Page Functions -->
+      <group name="Order Page Functions">
+        <method signature="DeshBoardOrderTest.pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="pageTitleTest" class="com.Tests.DeshBoardOrderTest"/>
+        <method signature="DeshBoardOrderTest.orderManueTest()[pri:2, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="orderManueTest" class="com.Tests.DeshBoardOrderTest"/>
+        <method signature="DeshBoardOrderTest.heasdSelectionTest()[pri:3, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="heasdSelectionTest" class="com.Tests.DeshBoardOrderTest"/>
+        <method signature="DeshBoardOrderTest.bodySelectionTest()[pri:4, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="bodySelectionTest" class="com.Tests.DeshBoardOrderTest"/>
+        <method signature="DeshBoardOrderTest.legsSelectionTest()[pri:5, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="legsSelectionTest" class="com.Tests.DeshBoardOrderTest"/>
+        <method signature="DeshBoardOrderTest.shippingAddress(java.lang.String)[pri:6, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="shippingAddress" class="com.Tests.DeshBoardOrderTest"/>
+      </group> <!-- Order Page Functions -->
     </groups>
-    <test started-at="2023-10-19T00:53:45 EDT" name="Desh Board Home Test" finished-at="2023-10-19T00:54:13 EDT" duration-ms="28423">
-      <class name="com.Tests.DeshBoardHomeTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:53:45 EDT" name="tearUp" finished-at="2023-10-19T00:53:53 EDT" duration-ms="7568" status="PASS">
+    <test started-at="2023-10-19T16:22:52 EDT" name="Default test" finished-at="2023-10-19T16:23:41 EDT" duration-ms="49761">
+      <class name="com.Tests.DeshBoardOrderTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:22:52 EDT" name="tearUp" finished-at="2023-10-19T16:23:00 EDT" duration-ms="7953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="pageTitleTest()[pri:1, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:53:53 EDT" name="pageTitleTest" description="Validate Current Page Title." finished-at="2023-10-19T00:53:53 EDT" duration-ms="80" status="PASS">
+        <test-method signature="pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:00 EDT" name="pageTitleTest" finished-at="2023-10-19T16:23:00 EDT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:53:53 EDT" name="tearDown" description="Close all browsers." finished-at="2023-10-19T00:53:54 EDT" duration-ms="1123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:00 EDT" name="tearDown" finished-at="2023-10-19T16:23:01 EDT" duration-ms="1096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:53:55 EDT" name="tearUp" finished-at="2023-10-19T00:54:01 EDT" duration-ms="5515" status="PASS">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:01 EDT" name="tearUp" finished-at="2023-10-19T16:23:07 EDT" duration-ms="5699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="salseDataTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:54:01 EDT" name="salseDataTest" description="Entering Salse data from Excel sheet." data-provider="getNewData" finished-at="2023-10-19T00:54:03 EDT" duration-ms="2149" status="PASS">
+        <test-method signature="orderManueTest()[pri:2, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:07 EDT" name="orderManueTest" finished-at="2023-10-19T16:23:07 EDT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderManueTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:07 EDT" name="tearDown" finished-at="2023-10-19T16:23:08 EDT" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:08 EDT" name="tearUp" finished-at="2023-10-19T16:23:15 EDT" duration-ms="7141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="heasdSelectionTest()[pri:3, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:15 EDT" name="heasdSelectionTest" finished-at="2023-10-19T16:23:16 EDT" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- heasdSelectionTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:16 EDT" name="tearDown" finished-at="2023-10-19T16:23:17 EDT" duration-ms="929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:17 EDT" name="tearUp" finished-at="2023-10-19T16:23:21 EDT" duration-ms="4755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="bodySelectionTest()[pri:4, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:21 EDT" name="bodySelectionTest" finished-at="2023-10-19T16:23:22 EDT" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bodySelectionTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:22 EDT" name="tearDown" finished-at="2023-10-19T16:23:23 EDT" duration-ms="1053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:23 EDT" name="tearUp" finished-at="2023-10-19T16:23:30 EDT" duration-ms="7655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="legsSelectionTest()[pri:5, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:30 EDT" name="legsSelectionTest" finished-at="2023-10-19T16:23:30 EDT" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- legsSelectionTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:30 EDT" name="tearDown" finished-at="2023-10-19T16:23:31 EDT" duration-ms="984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:33 EDT" name="tearUp" finished-at="2023-10-19T16:23:38 EDT" duration-ms="5673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="shippingAddress(java.lang.String)[pri:6, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:38 EDT" name="shippingAddress" data-provider="getNewData" finished-at="2023-10-19T16:23:40 EDT" duration-ms="2035" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MIraz]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Zaman]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3210.0]]>
+                <![CDATA[508 winfield Ave, Upper darby, PA, 19082]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- salseDataTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:54:03 EDT" name="tearDown" description="Close all browsers." finished-at="2023-10-19T00:54:04 EDT" duration-ms="896" status="PASS">
+        </test-method> <!-- shippingAddress -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:40 EDT" name="tearDown" finished-at="2023-10-19T16:23:41 EDT" duration-ms="1008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:54:04 EDT" name="tearUp" finished-at="2023-10-19T00:54:09 EDT" duration-ms="5495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="salseDataTest(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:54:09 EDT" name="salseDataTest" description="Entering Salse data from Excel sheet." data-provider="getNewData" finished-at="2023-10-19T00:54:12 EDT" duration-ms="3103" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Daraz]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Khamit]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1245.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- salseDataTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardHomeTest@1de9d54]" started-at="2023-10-19T00:54:12 EDT" name="tearDown" description="Close all browsers." finished-at="2023-10-19T00:54:13 EDT" duration-ms="989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.Tests.DeshBoardHomeTest -->
-    </test> <!-- Desh Board Home Test -->
-  </suite> <!-- Robotic Applicaion Automated Tess -->
+      </class> <!-- com.Tests.DeshBoardOrderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

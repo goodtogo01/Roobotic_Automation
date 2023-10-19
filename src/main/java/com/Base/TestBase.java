@@ -29,7 +29,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream fis = new FileInputStream(
-					"C:\\Users\\zaman\\eclipse-workspace\\RoboticFunctions\\src\\main\\java\\com\\Configurations\\config.properties");
+			"C:\\Users\\zaman\\eclipse-workspace\\RoboticAutomation\\src\\main\\java\\com\\Configurations\\config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException fnfe) {
 			fnfe.printStackTrace();
@@ -51,12 +51,10 @@ public class TestBase {
 		}
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
-		driver.navigate().refresh();
 		driver.manage().deleteAllCookies();
 		driver.navigate().refresh();
 		tDriver.set(driver);
 		return getDriver();
-		
 
 	}
 
@@ -71,6 +69,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.navigate().refresh();
 	}
+
 	public static synchronized WebDriver getDriver() {
 		return tDriver.get();
 	}

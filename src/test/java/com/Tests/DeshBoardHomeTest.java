@@ -15,7 +15,16 @@ import com.Pages.HomePage;
 import com.Pages.LoginPage;
 import com.Utility.TestUtils;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 @Listeners({AllureListeners.class})
+@Epic("Regression Tests")
+@Feature("Desh Bard Home Functions")
 public class DeshBoardHomeTest extends TestBase {
 
 	LoginPage loginPage;
@@ -36,7 +45,10 @@ public class DeshBoardHomeTest extends TestBase {
 
 	}
 
-	@Test(groups = "Desh Board Page Functions", priority = 1, description = "Validate Current Page Title.")
+	@Test(groups = "Desh Board Page Functions", priority = 1)
+	@Severity(SeverityLevel.NORMAL)
+    @Description("Test Description: Validate Current Page Title..")
+    @Story("Varify Page title is appear as per requirements.")
 	public void pageTitleTest() {
 		String ti = deshBoardHome.validatePageTitle();
 		Assert.assertEquals(ti, "RobotSpareBin Industries Inc.. - Intranet", "Title is missing!!");
@@ -49,7 +61,10 @@ public class DeshBoardHomeTest extends TestBase {
 		return data;
 	}
 
-	@Test(groups = "Desh Board  Functions", dataProvider = "getNewData", priority = 2, description = "Entering Salse data from Excel sheet.")
+	@Test(groups = "Desh Board  Functions", dataProvider = "getNewData", priority = 2)
+	 @Severity(SeverityLevel.CRITICAL)
+    @Description("Test Description: Entering Salse data from the Excel sheet.")
+    @Story("Add external test data for each ueser and capture the behaviour")
 	public void salseDataTest(String firstname, String lastname, String amounts) {
 		loginPage.enterCredentials(prop.getProperty("userName"), prop.getProperty("password"));
 		//TestUtils.implicitelyWaitTime();

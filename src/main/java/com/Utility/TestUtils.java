@@ -23,7 +23,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.Base.TestBase;
 
 public class TestUtils extends TestBase{
-	public static final long IMPLICITLY_WAIT_TIME = 15;
+	public static final long IMPLICITLY_WAIT_TIME = 19;
 	public static final long PAGE_LOAD_TIME = 10;
 	public static WebDriverWait wait;
 	public static String TestDataSheet = "C:\\Users\\zaman\\eclipse-workspace\\RoboticFunctions\\salesSheet.xlsx";

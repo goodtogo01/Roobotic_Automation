@@ -35,13 +35,13 @@ public class AllureListeners extends TestBase implements ITestListener {
     }
 
     public void onStart(ITestContext iTestContext) {
-       System.out.println("I am in onStart method " + iTestContext.getName());
+       System.out.println("I am in on Start method " + iTestContext.getName());
         iTestContext.setAttribute("WebDriver", TestBase.getDriver());
     }
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-       System.out.println("I am in onFinish method " + iTestContext.getName());
+       System.out.println("I am in on Finish method " + iTestContext.getName());
       
     }
 
@@ -77,6 +77,17 @@ public class AllureListeners extends TestBase implements ITestListener {
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
        System.out.println(getTestMethodName(iTestResult) + " test is skipped.");
+       //Get driver from BaseTest and assign to local webdriver variable.
+       Object testClass = iTestResult.getInstance();
+       WebDriver driver = TestBase.getDriver();
+       //Allure ScreenShotRobot and SaveTestLog
+       if (driver != null) { // can be use of -- if(driver instanceOf WebDriver)
+           System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
+           saveScreenshotPNG(driver);
+       }
+
+       //Save a log on allure.
+       saveTextLog(getTestMethodName(iTestResult) + " Test is skipped and screenshot taken!");
 
     }
 

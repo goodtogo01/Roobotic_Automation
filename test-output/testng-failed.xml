@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Robotic Applicaion Automated Tess]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.Analyzer.Transformations"/>
-  </listeners>
-  <test thread-count="5" parallel="classes" name="Desh Board Home Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tests.DeshBoardHomeTest">
+      <class name="com.Tests.LoginPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="salseDataTest"/>
+          <include name="logOutTest"/>
           <include name="tearUp"/>
         </methods>
-      </class> <!-- com.Tests.DeshBoardHomeTest -->
+      </class> <!-- com.Tests.LoginPageTest -->
     </classes>
-  </test> <!-- Desh Board Home Test(failed) -->
-</suite> <!-- Failed suite [Robotic Applicaion Automated Tess] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

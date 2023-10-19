@@ -1,11 +1,14 @@
 package com.Pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
 import com.Base.TestBase;
+import com.Utility.TestUtils;
 
 public class LoginPage extends TestBase{
 	//Locators collection
@@ -18,11 +21,16 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath = "//button[contains(text(),'Log in')]")
 	WebElement loginButton;
 	
+	@FindBy(xpath = "//div[contains(text(),'Invalid username or password.')]")
+	WebElement inValidMessage;
+	
 	@FindBy(xpath = "//span[contains(text(),'maria')]")
 	WebElement displayUserName;
 	
 	@FindBy(xpath = "//button[@id='logout']")
 	WebElement logoutButton;
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]")
+	WebElement logoutValieation;
 	
 	//Page Factory initializations
 	public LoginPage() {
@@ -40,12 +48,23 @@ public class LoginPage extends TestBase{
 		loginButton.click();
 		return new HomePage();
 	 }
-	public void logOut() {
+	public void logOut() throws IOException {
 		logoutButton.click();
+	 		if(logoutValieation.isDisplayed()) {
+			System.out.println("Log out has successful..");
+			TestUtils.implicitelyWaitTime();
+			TestUtils.takeScreenShootSpecificElement(logoutValieation);
+			
+		}
 	}
 	public String displayUserName() {
 		String display = displayUserName.getText();
 		return display;
+	}
+	public boolean invalidEntry() {
+		boolean invalidMsg = inValidMessage.isDisplayed();
+	System.out.println("Error message found as : "+inValidMessage.getText());
+		return invalidMsg;
 	}
 	
 
