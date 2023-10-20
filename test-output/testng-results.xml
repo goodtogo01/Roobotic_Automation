@@ -1,100 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-19T16:22:52 EDT" name="Default suite" finished-at="2023-10-19T16:23:41 EDT" duration-ms="49761">
+  <suite started-at="2023-10-19T22:08:17 EDT" name="Default suite" finished-at="2023-10-19T22:08:54 EDT" duration-ms="36717">
     <groups>
-      <group name="Order Page Functions">
-        <method signature="DeshBoardOrderTest.pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="pageTitleTest" class="com.Tests.DeshBoardOrderTest"/>
-        <method signature="DeshBoardOrderTest.orderManueTest()[pri:2, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="orderManueTest" class="com.Tests.DeshBoardOrderTest"/>
-        <method signature="DeshBoardOrderTest.heasdSelectionTest()[pri:3, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="heasdSelectionTest" class="com.Tests.DeshBoardOrderTest"/>
-        <method signature="DeshBoardOrderTest.bodySelectionTest()[pri:4, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="bodySelectionTest" class="com.Tests.DeshBoardOrderTest"/>
-        <method signature="DeshBoardOrderTest.legsSelectionTest()[pri:5, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="legsSelectionTest" class="com.Tests.DeshBoardOrderTest"/>
-        <method signature="DeshBoardOrderTest.shippingAddress(java.lang.String)[pri:6, instance:com.Tests.DeshBoardOrderTest@34fe326d]" name="shippingAddress" class="com.Tests.DeshBoardOrderTest"/>
-      </group> <!-- Order Page Functions -->
+      <group name="Home Page Functions">
+        <method signature="HomePageTest.homeButtonTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" name="homeButtonTest" class="com.Tests.HomePageTest"/>
+        <method signature="HomePageTest.homePageText()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" name="homePageText" class="com.Tests.HomePageTest"/>
+        <method signature="HomePageTest.loginButtonTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" name="loginButtonTest" class="com.Tests.HomePageTest"/>
+        <method signature="HomePageTest.orderButtonTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" name="orderButtonTest" class="com.Tests.HomePageTest"/>
+        <method signature="HomePageTest.pageTitleTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" name="pageTitleTest" class="com.Tests.HomePageTest"/>
+      </group> <!-- Home Page Functions -->
     </groups>
-    <test started-at="2023-10-19T16:22:52 EDT" name="Default test" finished-at="2023-10-19T16:23:41 EDT" duration-ms="49761">
-      <class name="com.Tests.DeshBoardOrderTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:22:52 EDT" name="tearUp" finished-at="2023-10-19T16:23:00 EDT" duration-ms="7953" status="PASS">
+    <test started-at="2023-10-19T22:08:17 EDT" name="Default test" finished-at="2023-10-19T22:08:54 EDT" duration-ms="36717">
+      <class name="com.Tests.HomePageTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:17 EDT" name="tearUp" finished-at="2023-10-19T22:08:25 EDT" duration-ms="7855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:00 EDT" name="pageTitleTest" finished-at="2023-10-19T16:23:00 EDT" duration-ms="19" status="PASS">
+        <test-method signature="homeButtonTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:25 EDT" name="homeButtonTest" finished-at="2023-10-19T22:08:25 EDT" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:25 EDT" name="tearDown" finished-at="2023-10-19T22:08:27 EDT" duration-ms="1103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:27 EDT" name="tearUp" finished-at="2023-10-19T22:08:32 EDT" duration-ms="5888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="homePageText()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:32 EDT" name="homePageText" finished-at="2023-10-19T22:08:33 EDT" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:33 EDT" name="tearDown" finished-at="2023-10-19T22:08:34 EDT" duration-ms="967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:34 EDT" name="tearUp" finished-at="2023-10-19T22:08:38 EDT" duration-ms="4831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="loginButtonTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:38 EDT" name="loginButtonTest" finished-at="2023-10-19T22:08:38 EDT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:38 EDT" name="tearDown" finished-at="2023-10-19T22:08:39 EDT" duration-ms="884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:39 EDT" name="tearUp" finished-at="2023-10-19T22:08:44 EDT" duration-ms="4634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="orderButtonTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:44 EDT" name="orderButtonTest" finished-at="2023-10-19T22:08:44 EDT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:44 EDT" name="tearDown" finished-at="2023-10-19T22:08:45 EDT" duration-ms="989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:45 EDT" name="tearUp" finished-at="2023-10-19T22:08:53 EDT" duration-ms="7756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method signature="pageTitleTest()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:53 EDT" name="pageTitleTest" finished-at="2023-10-19T22:08:53 EDT" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:00 EDT" name="tearDown" finished-at="2023-10-19T16:23:01 EDT" duration-ms="1096" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@6a282fdd]" started-at="2023-10-19T22:08:53 EDT" name="tearDown" finished-at="2023-10-19T22:08:54 EDT" duration-ms="958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:01 EDT" name="tearUp" finished-at="2023-10-19T16:23:07 EDT" duration-ms="5699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="orderManueTest()[pri:2, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:07 EDT" name="orderManueTest" finished-at="2023-10-19T16:23:07 EDT" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderManueTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:07 EDT" name="tearDown" finished-at="2023-10-19T16:23:08 EDT" duration-ms="1180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:08 EDT" name="tearUp" finished-at="2023-10-19T16:23:15 EDT" duration-ms="7141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="heasdSelectionTest()[pri:3, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:15 EDT" name="heasdSelectionTest" finished-at="2023-10-19T16:23:16 EDT" duration-ms="508" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- heasdSelectionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:16 EDT" name="tearDown" finished-at="2023-10-19T16:23:17 EDT" duration-ms="929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:17 EDT" name="tearUp" finished-at="2023-10-19T16:23:21 EDT" duration-ms="4755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="bodySelectionTest()[pri:4, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:21 EDT" name="bodySelectionTest" finished-at="2023-10-19T16:23:22 EDT" duration-ms="302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bodySelectionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:22 EDT" name="tearDown" finished-at="2023-10-19T16:23:23 EDT" duration-ms="1053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:23 EDT" name="tearUp" finished-at="2023-10-19T16:23:30 EDT" duration-ms="7655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="legsSelectionTest()[pri:5, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:30 EDT" name="legsSelectionTest" finished-at="2023-10-19T16:23:30 EDT" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- legsSelectionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:30 EDT" name="tearDown" finished-at="2023-10-19T16:23:31 EDT" duration-ms="984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:33 EDT" name="tearUp" finished-at="2023-10-19T16:23:38 EDT" duration-ms="5673" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-        <test-method signature="shippingAddress(java.lang.String)[pri:6, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:38 EDT" name="shippingAddress" data-provider="getNewData" finished-at="2023-10-19T16:23:40 EDT" duration-ms="2035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[508 winfield Ave, Upper darby, PA, 19082]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shippingAddress -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@34fe326d]" started-at="2023-10-19T16:23:40 EDT" name="tearDown" finished-at="2023-10-19T16:23:41 EDT" duration-ms="1008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.Tests.DeshBoardOrderTest -->
+      </class> <!-- com.Tests.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

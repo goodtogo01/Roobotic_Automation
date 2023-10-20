@@ -51,7 +51,7 @@ public class DeshBoardHomeTest extends TestBase {
     @Story("Varify Page title is appear as per requirements.")
 	public void pageTitleTest() {
 		String ti = deshBoardHome.validatePageTitle();
-		Assert.assertEquals(ti, "RobotSpareBin Industries Inc.. - Intranet", "Title is missing!!");
+		Assert.assertEquals(ti, "RobotSpareBin Industries Inc. - Intranet", "Title is missing!!");
 		System.out.println("Page Title is : " + ti);
 	}
 
