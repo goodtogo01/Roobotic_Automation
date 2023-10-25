@@ -1,10 +1,21 @@
 package com.Utility;
 
 import com.Base.TestBase;
+import lombok.Getter;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.List;
+import java.util.NoSuchElementException;
 
 public class SeleniumOperations extends TestBase {
 	private static final long DRIVER_WAIT_TIME = 10;
-    private static final Logger LOG = LoggerFactory.getLogger(PageObject.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SeleniumOperations.class);
 
     @Getter
     protected WebDriverWait wait;
@@ -12,8 +23,9 @@ public class SeleniumOperations extends TestBase {
     protected WebDriver webDriver;
 
 
-    protected PageObject() {
-        this.webDriver = WebDriverHelper.getWebDriver();
+    protected SeleniumOperations() {
+
+        this.webDriver = TestBase.getDriver();
         this.wait = new WebDriverWait(webDriver, DRIVER_WAIT_TIME);
     }
 
@@ -337,7 +349,7 @@ public class SeleniumOperations extends TestBase {
      * @param element the WebElement
      * @return the (same) WebElement once it is visible
      */
-tt
+
     public WebElement visibilityOf(final WebElement element) {
         return (new WebDriverWait(webDriver, DRIVER_WAIT_TIME)).until(ExpectedConditions.visibilityOf(element));
     }

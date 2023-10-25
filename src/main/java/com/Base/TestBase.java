@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,16 +15,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestBase {
 	public static WebDriver driver;
 	public static ThreadLocal<WebDriver> tDriver = new ThreadLocal<WebDriver>();
+
 	public static Properties prop;
 	public static String projectPath = System.getProperty("user.dir");
 	public static final String sauseLabUserName = "oauth-khosruzzaman.ny-a16bb";
 	public static final String sauseLabAccessKey = "03a33318-0b0c-4588-a865-f75d7a1387ce";
 	public static final String sauseLabURL = "https://" + sauseLabUserName + ":" + sauseLabAccessKey
 			+ "@ondemand.us-west-1.saucelabs.com:443/wd/hub";
+	// Declare ThreadLocal Driver (ThreadLocalMap) for ThreadSafe Tests
+
 
 	public TestBase() {
 		try {
@@ -70,8 +75,9 @@ public class TestBase {
 		driver.navigate().refresh();
 	}
 
-	public static synchronized WebDriver getDriver() {
-		return tDriver.get();
+	public static WebDriver getDriver() {
+		// Get driver from ThreadLocalMap
+		return driver; 
 	}
 
 }
