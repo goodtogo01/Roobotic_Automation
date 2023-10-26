@@ -33,6 +33,7 @@ public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	TestUtils testUtils;
 	LoginPageTest loginPageTest;
+	SeleniumOperations seleniumOperations;
 
 	public LoginPageTest() {
 		super();
@@ -45,6 +46,7 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 		testUtils = new TestUtils();
 		loginPageTest = new LoginPageTest();
+		seleniumOperations = new SeleniumOperations();
 	}
 
 	@Test(priority = 1, groups = "Home Page Functions")
@@ -52,9 +54,10 @@ public class LoginPageTest extends TestBase {
     @Description("Test Description: Validate Current Page Title..")
     @Story("Varify Page title is appear as per requirements.")
 	public void pageTitleTest() {
-		String ti = loginPage.validatePageTitle();
-		Assert.assertEquals(ti, "RobotSpareBin Industries Inc. - Intranet", "Title is missing!!");
-		System.out.println("Page Title is : " + ti);
+		//String ti = loginPage.validatePageTitle();
+		String title = seleniumOperations.getCurrentPageTitle();
+		Assert.assertEquals(title, "RobotSpareBin Industries Inc. - Intranet", "Title is missing!!");
+		System.out.println("Page Title is : " + title);
 	}
 
 	@Test(priority = 2, groups = "Login page Functionalities")

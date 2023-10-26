@@ -3,6 +3,7 @@ package com.Base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
@@ -22,7 +23,7 @@ public class TestBase {
 	public static ThreadLocal<WebDriver> tDriver = new ThreadLocal<WebDriver>();
 
 	public static Properties prop;
-	public static String projectPath = System.getProperty("user.dir");
+	public static String projectPath = System.getProperty("user.dir"); //not in use for now
 	public static final String sauseLabUserName = "oauth-khosruzzaman.ny-a16bb";
 	public static final String sauseLabAccessKey = "03a33318-0b0c-4588-a865-f75d7a1387ce";
 	public static final String sauseLabURL = "https://" + sauseLabUserName + ":" + sauseLabAccessKey
@@ -33,8 +34,8 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(
-			"C:\\Users\\zaman\\eclipse-workspace\\RoboticAutomation\\src\\main\\java\\com\\Configurations\\config.properties");
+			//FileInputStream fis = new FileInputStream("/config.properties");
+			InputStream fis = TestBase.class.getResourceAsStream("/config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException fnfe) {
 			fnfe.printStackTrace();

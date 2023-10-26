@@ -119,6 +119,11 @@
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
+                   <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
     </dependencies>
 	  <build>
             <plugins>
@@ -136,20 +141,20 @@
 				<version>${maven-surefire-plugin-version}</version>
 				<configuration>
 					<suiteXmlFiles> suppress UnresolvedMavenProperty 
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>Sanity.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					 <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
 				</configuration>
-				 <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
+		
 			</plugin>
         </plugins>
+         <resources>
+        <resource>
+            <directory>resources</directory>
+        </resource>
+    </resources>
   </build>
+  
 </project>

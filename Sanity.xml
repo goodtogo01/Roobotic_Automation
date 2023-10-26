@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Robotic Applicaion Automated Tess">
+	<listeners>
+		<listener class-name="com.Analyzer.Transformations"></listener>
+		<listener class-name="com.Analyzer.AllureListeners"></listener>
+
+	</listeners>
+
+	<test name="Home Page Test" parallel="classes" thread-count="5">
+		<classes>
+			<class name="com.Tests.HomePageTest">
+				<methods>
+					<include name="pageTitleTest" />
+					<include name="homePageText" />
+				<include name="homeButtonTest" />
+					<include name="orderButtonTest" />
+					<include name="loginButtonTest" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+	</suite> <!-- Suite -->
+
+
+  	 

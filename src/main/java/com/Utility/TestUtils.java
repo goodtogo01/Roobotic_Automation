@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -26,18 +27,15 @@ public class TestUtils extends TestBase {
 	public static final long IMPLICITLY_WAIT_TIME = 19;
 	public static final long PAGE_LOAD_TIME = 10;
 	public static WebDriverWait wait;
-	public static String TestDataSheet = "C:\\Users\\zaman\\eclipse-workspace\\RoboticFunctions\\salesSheet.xlsx";
+	public static String TestDataSheet = "user.dir";
 	static Workbook book;
 	static Sheet sheet;
 	public static Alert alert;
 	public static FileInputStream fis;
 
-	public static Object[][] getTestData(String sheetName) {
-		try {
-			fis = new FileInputStream(TestDataSheet);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+	public static Object[][] getTestData(String sheetName) throws FileNotFoundException {
+		//fis = new FileInputStream(TestDataSheet);
+		InputStream fis = TestBase.class.getResourceAsStream("/salesSheet.xlsx");
 		try {
 			book = WorkbookFactory.create(fis);
 		} catch (IOException e) {

@@ -13,14 +13,14 @@
 				<methods>
 					<include name="pageTitleTest" />
 					<include name="homePageText" />
-					<include name="homeButtonTest" />
+				<include name="homeButtonTest" />
 					<include name="orderButtonTest" />
-					<include name="loginButtonTest" />
+					<include name="loginButtonTest" /> 
 				</methods>
 			</class>
 		</classes>
 	</test>
-	<test name="Login Page Test" parallel="classes" thread-count="3">
+	 <test name="Login Page Test" parallel="classes" thread-count="3">
 		<classes>
 			<class name="com.Tests.LoginPageTest">
 				<methods>

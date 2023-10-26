@@ -1,5 +1,6 @@
 package com.Tests;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -100,7 +101,7 @@ public class DeshBoardOrderTest extends TestBase {
 	}
 
 	@DataProvider
-	public Object[][] getNewData() {
+	public Object[][] getNewData() throws FileNotFoundException {
 		Object[][] data = TestUtils.getTestData(sheetName);
 		return data;
 	}

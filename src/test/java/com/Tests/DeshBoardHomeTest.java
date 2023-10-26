@@ -1,5 +1,7 @@
 package com.Tests;
 
+import java.io.FileNotFoundException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -56,7 +58,7 @@ public class DeshBoardHomeTest extends TestBase {
 	}
 
 	@DataProvider
-	public Object[][] getNewData() {
+	public Object[][] getNewData() throws FileNotFoundException {
 		Object[][] data = TestUtils.getTestData(sheetName);
 		return data;
 	}
