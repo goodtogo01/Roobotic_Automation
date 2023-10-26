@@ -94,6 +94,9 @@ public class DeshBoardHomeTest extends TestBase {
 	*/
 
 	@AfterMethod(groups = "Initializations", description = "Close all browsers.")
+	 @Severity(SeverityLevel.NORMAL)
+    @Description("To closed the browsers")
+   
 	public void tearDown() {
 	 
 		driver.close();
