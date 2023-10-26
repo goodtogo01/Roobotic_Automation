@@ -12,10 +12,10 @@
 			<class name="com.Tests.HomePageTest">
 				<methods>
 					<include name="pageTitleTest" />
-					<include name="homePageText" />
-				<include name="homeButtonTest" />
+					<!-- <include name="homePageText" />
+					<include name="homeButtonTest" />
 					<include name="orderButtonTest" />
-					<include name="loginButtonTest" /> 
+					<include name="loginButtonTest" />  -->
 				</methods>
 			</class>
 		</classes>

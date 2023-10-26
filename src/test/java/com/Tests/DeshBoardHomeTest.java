@@ -50,7 +50,7 @@ public class DeshBoardHomeTest extends TestBase {
 	@Test(groups = "Desh Board Page Functions", priority = 1)
 	@Severity(SeverityLevel.NORMAL)
     @Description("Test Description: Validate Current Page Title..")
-    @Story("Varify Page title is appear as per requirements.")
+    @Story("To Varify Page title is appear as per requirements.")
 	public void pageTitleTest() {
 		String ti = deshBoardHome.validatePageTitle();
 		Assert.assertEquals(ti, "RobotSpareBin Industries Inc. - Intranet", "Title is missing!!");
