@@ -77,6 +77,7 @@ public class HomePageTest extends TestBase{
 		System.out.println("Login button is appear correctly: "+appears);
 	}
 	@AfterMethod(groups = "Initializations")
+	 @Description("To closed the browsers")
 	public void tearDown() {
 		driver.close();
 		

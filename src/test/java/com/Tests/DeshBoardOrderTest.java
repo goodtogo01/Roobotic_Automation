@@ -135,6 +135,7 @@ public class DeshBoardOrderTest extends TestBase {
 		}
 
 	@AfterMethod(groups = "Initializations")
+	 @Description("To closed the browsers")
 	public void tearDown() {
 		driver.close();
 	}
