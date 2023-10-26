@@ -94,7 +94,7 @@ public class DeshBoardHomeTest extends TestBase {
 	*/
 
 	@AfterMethod(groups = "Initializations")
-	@Description("To closed the browsers")
+	@Description("To closed the browsers.")
    
 	public void tearDown() {
 	 
