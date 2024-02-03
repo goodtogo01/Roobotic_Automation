@@ -141,7 +141,7 @@
 				<version>${maven-surefire-plugin-version}</version>
 				<configuration>
 					<suiteXmlFiles> suppress UnresolvedMavenProperty 
-						<suiteXmlFile>Sanity.xml</suiteXmlFile>
+						<suiteXmlFile>FullRegression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					 <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
