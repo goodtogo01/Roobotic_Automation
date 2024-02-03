@@ -1,11 +1,10 @@
 package com.Tests;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.w3c.dom.html.HTMLObjectElement;
+
 
 import com.Analyzer.AllureListeners;
 import com.Base.TestBase;
@@ -35,7 +34,7 @@ public class HomePageTest extends TestBase{
     @Story("Varify Page title is appear as per requirements.")
 	public void pageTitleTest() {
 		String ti = homePage.pageTitle();
-		Assert.assertEquals(ti, "RobotSpareBin Industries Inc. - Intranet", "Title is missing!!");
+		Assert.assertEquals(ti, "RobotSpareBin Industries Inc.. - Intranet", "Title is missing!!");
 		System.out.println("Page Title is : "+ti);
 	}
 	

@@ -1,7 +1,6 @@
 package com.Tests;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -110,7 +109,7 @@ public class DeshBoardOrderTest extends TestBase {
 	@Severity(SeverityLevel.CRITICAL)
     @Description("Test Description: After selection, Entering the shipping address here.")
     @Story("Once user select their roobot, The must enter their shipping addres for shipping.")
-	public void shippingAddress(String address) throws IOException {
+	public void shippingAddress(String address) throws Exception {
 		heasdSelectionTest();
 		bodySelectionTest();
 		legsSelectionTest();
@@ -129,9 +128,9 @@ public class DeshBoardOrderTest extends TestBase {
 	@Severity(SeverityLevel.NORMAL)
     @Description("Test Description: After completed order, user can see their receipts")
     @Story("Receipt will apprer")
-	public void displayReceipt() throws IOException {
-		deshBoardOrder.fullReceiptDisplay();
+	public void displayReceipt() throws Exception {
 		TestUtils.implicitelyWaitTime();
+		deshBoardOrder.fullReceiptDisplay();
 		}
 
 	@AfterMethod(groups = "Initializations")

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tests.DeshBoardHomeTest">
+      <class name="com.Tests.DeshBoardOrderTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="salseDataTest"/>
           <include name="tearUp"/>
+          <include name="shippingAddress" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.Tests.DeshBoardHomeTest -->
+      </class> <!-- com.Tests.DeshBoardOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

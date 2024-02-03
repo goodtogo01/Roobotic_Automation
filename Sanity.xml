@@ -8,14 +8,15 @@
 	</listeners>
 
 	<test name="Home Page Test" parallel="classes" thread-count="5">
+	<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.Tests.HomePageTest">
 				<methods>
 					<include name="pageTitleTest" />
-					<!-- <include name="homePageText" />
+					 <include name="homePageText" />
 					<include name="homeButtonTest" />
 					<include name="orderButtonTest" />
-					<include name="loginButtonTest" />  -->
+					<include name="loginButtonTest" />  
 				</methods>
 			</class>
 		</classes>

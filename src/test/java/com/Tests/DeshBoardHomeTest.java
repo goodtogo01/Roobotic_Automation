@@ -1,5 +1,4 @@
 package com.Tests;
-
 import java.io.FileNotFoundException;
 
 import org.testng.Assert;
@@ -24,6 +23,7 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 
+@Test
 @Listeners({AllureListeners.class})
 @Epic("Regression Tests")
 @Feature("Desh Bard Home Functions")
@@ -47,7 +47,6 @@ public class DeshBoardHomeTest extends TestBase {
 
 	}
 
-	@Test(groups = "Desh Board Page Functions", priority = 1)
 	@Severity(SeverityLevel.NORMAL)
     @Description("Test Description: Validate Current Page Title..")
     @Story("To Varify Page title is appear as per requirements.")
@@ -63,8 +62,7 @@ public class DeshBoardHomeTest extends TestBase {
 		return data;
 	}
 
-	@Test(groups = "Desh Board  Functions", dataProvider = "getNewData", priority = 2)
-	 @Severity(SeverityLevel.CRITICAL)
+	@Severity(SeverityLevel.CRITICAL)
     @Description("Test Description: Entering Salse data from the Excel sheet.")
     @Story("Add external test data for each ueser and capture the behaviour")
 	public void salseDataTest(String firstname, String lastname, String amounts) {

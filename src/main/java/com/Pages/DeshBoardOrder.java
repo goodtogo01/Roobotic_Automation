@@ -2,7 +2,6 @@ package com.Pages;
 
 import java.awt.Robot;
 import java.awt.print.Pageable;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -74,7 +73,6 @@ public class DeshBoardOrder extends TestBase {
 
 	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[1]/div[2]")
 	WebElement roobotImage;
-
 
 	@FindBy(xpath = "//*[@id='preview']")
 	WebElement previewMyOrders;
@@ -151,12 +149,13 @@ public class DeshBoardOrder extends TestBase {
 		} catch (Exception e) {
 			e.getMessage();
 		}
-		
+
 	}
 
-	public boolean previiews() throws IOException {
+	public boolean previiews() throws Exception {
 		TestUtils.implicitelyWaitTime();
-		previewMyOrders.click();
+		// previewMyOrders.click();
+		TestUtils.safeJavaScriptClick(previewMyOrders);
 		boolean robotDiplayed = roobotImage.isDisplayed();
 		TestUtils.takeScreenShootSpecificElement(roobotImage);
 		return robotDiplayed;
@@ -170,8 +169,9 @@ public class DeshBoardOrder extends TestBase {
 
 	}
 
-	public void fullReceiptDisplay() throws IOException {
-		finalOrder.click();
+	public void fullReceiptDisplay() throws Exception {
+	//	finalOrder.click();
+		TestUtils.safeJavaScriptClick(finalOrder);
 		String orders = orderReceipt.getText();
 		System.out.println("\nFinal Receipts of order: " + orders + "\n");
 		TestUtils.takeScreenShootSpecificElement(orderReceipt);

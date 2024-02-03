@@ -23,7 +23,7 @@ public class SeleniumOperations extends TestBase {
     protected WebDriver webDriver;
 
 
-    public SeleniumOperations() {
+    public SeleniumOperations () {
 
         this.webDriver = TestBase.getDriver();
         this.wait = new WebDriverWait(webDriver, DRIVER_WAIT_TIME);
