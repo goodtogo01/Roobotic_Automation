@@ -6,7 +6,8 @@
       <class name="com.Tests.DeshBoardOrderTest">
         <methods>
           <include name="tearUp"/>
-          <include name="shippingAddress" invocation-numbers="0"/>
+          <include name="displayReceipt"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.Tests.DeshBoardOrderTest -->
     </classes>

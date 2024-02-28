@@ -20,6 +20,22 @@
 				</methods>
 			</class>
 		</classes>
+	</test> 
+	
+	<test name="Desh Board Order Test" parallel="classes" thread-count="8">
+		<classes>
+			<class name="com.Tests.DeshBoardOrderTest">
+				<methods>
+					<include name="pageTitleTest" />
+					<include name="orderManueTest" />
+					<include name="heasdSelectionTest" />
+					<include name="bodySelectionTest" />
+					<include name="legsSelectionTest" />
+					<include name="shippingAddress" />
+					<include name="displayReceipt" />
+				</methods>
+			</class>
+		</classes>
 	</test>
 	</suite> <!-- Suite -->
 

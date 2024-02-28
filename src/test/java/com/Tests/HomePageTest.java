@@ -34,7 +34,7 @@ public class HomePageTest extends TestBase{
     @Story("Varify Page title is appear as per requirements.")
 	public void pageTitleTest() {
 		String ti = homePage.pageTitle();
-		Assert.assertEquals(ti, "RobotSpareBin Industries Inc.. - Intranet", "Title is missing!!");
+		Assert.assertEquals(ti, "RobotSpareBin Industries Inc. - Intranet", "Title is missing!!");
 		System.out.println("Page Title is : "+ti);
 	}
 	

@@ -3,6 +3,7 @@
 <suite name="Failed suite [Robotic Applicaion Automated Tess]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.Analyzer.Transformations"/>
+    <listener class-name="com.Analyzer.AllureListeners"/>
   </listeners>
   <test thread-count="5" parallel="classes" name="Desh Board Home Test(failed)">
     <classes>
@@ -15,4 +16,15 @@
       </class> <!-- com.Tests.DeshBoardHomeTest -->
     </classes>
   </test> <!-- Desh Board Home Test(failed) -->
+  <test thread-count="5" parallel="classes" name="Desh Board Order Test(failed)">
+    <classes>
+      <class name="com.Tests.DeshBoardOrderTest">
+        <methods>
+          <include name="tearUp"/>
+          <include name="shippingAddress" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Tests.DeshBoardOrderTest -->
+    </classes>
+  </test> <!-- Desh Board Order Test(failed) -->
 </suite> <!-- Failed suite [Robotic Applicaion Automated Tess] -->

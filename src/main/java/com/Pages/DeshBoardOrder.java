@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.awt.print.Pageable;
 import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import org.apache.xmlbeans.impl.xb.xsdschema.RedefineDocument.Redefine;
@@ -170,7 +171,8 @@ public class DeshBoardOrder extends TestBase {
 	}
 
 	public void fullReceiptDisplay() throws Exception {
-	//	finalOrder.click();
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//finalOrder.click();
 		TestUtils.safeJavaScriptClick(finalOrder);
 		String orders = orderReceipt.getText();
 		System.out.println("\nFinal Receipts of order: " + orders + "\n");

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Desh Board Home Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 19 00:53:45 EDT 2023</td>
+<td>Started on:</td><td>Wed Feb 28 14:41:05 EST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28423 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6366 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,44 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Tests.DeshBoardHomeTest.salseDataTest()'><b>salseDataTest</b><br>Test class: com.Tests.DeshBoardHomeTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [salseDataTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2122371692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2122371692'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [salseDataTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>com.Tests.DeshBoardHomeTest@1e86a5a7</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,20 +114,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Tests.DeshBoardHomeTest.salseDataTest()'><b>salseDataTest</b><br>Test class: com.Tests.DeshBoardHomeTest<br>Test method: Entering Salse data from Excel sheet.<br>Parameters: Daraz, Khamit, 1245.0</td>
-<td></td>
-<td>3</td>
-<td>com.Tests.DeshBoardHomeTest@1de9d54</td></tr>
-<tr>
-<td title='com.Tests.DeshBoardHomeTest.pageTitleTest()'><b>pageTitleTest</b><br>Test class: com.Tests.DeshBoardHomeTest<br>Test method: Validate Current Page Title.</td>
+<td title='com.Tests.DeshBoardHomeTest.pageTitleTest()'><b>pageTitleTest</b><br>Test class: com.Tests.DeshBoardHomeTest</td>
 <td></td>
 <td>0</td>
-<td>com.Tests.DeshBoardHomeTest@1de9d54</td></tr>
-<tr>
-<td title='com.Tests.DeshBoardHomeTest.salseDataTest()'><b>salseDataTest</b><br>Test class: com.Tests.DeshBoardHomeTest<br>Test method: Entering Salse data from Excel sheet.<br>Parameters: MIraz, Zaman, 3210.0</td>
-<td></td>
-<td>2</td>
-<td>com.Tests.DeshBoardHomeTest@1de9d54</td></tr>
+<td>com.Tests.DeshBoardHomeTest@1e86a5a7</td></tr>
 </table><p>
 </body>
 </html>

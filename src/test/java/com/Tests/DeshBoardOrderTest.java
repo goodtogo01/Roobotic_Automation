@@ -1,6 +1,9 @@
 package com.Tests;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -124,7 +127,7 @@ public class DeshBoardOrderTest extends TestBase {
 		orderManueTest();
 	}
 
-	@Test(groups = "Order Page Functions", priority = 7, dependsOnMethods = "shippingAddress", enabled = false)
+	//@Test(groups = "Order Page Functions", priority = 7, dependsOnMethods = "shippingAddress", enabled = true)
 	@Severity(SeverityLevel.NORMAL)
     @Description("Test Description: After completed order, user can see their receipts")
     @Story("Receipt will apprer")
@@ -134,7 +137,7 @@ public class DeshBoardOrderTest extends TestBase {
 		}
 
 	@AfterMethod(groups = "Initializations")
-	 @Description("To closed the browsers")
+	@Description("To closed the browsers")
 	public void tearDown() {
 		driver.close();
 	}
