@@ -29,13 +29,13 @@ public class TestBase {
 	public static final String sauseLabURL = "https://" + sauseLabUserName + ":" + sauseLabAccessKey
 			+ "@ondemand.us-west-1.saucelabs.com:443/wd/hub";
 	// Declare ThreadLocal Driver (ThreadLocalMap) for ThreadSafe Tests
-
+public static String configPath ="/Users/khosruzzaman/JAVA-WORKS/Roobotic_Automation/resources/config.properties";
 
 	public TestBase() {
 		try {
 			prop = new Properties();
-			//FileInputStream fis = new FileInputStream("/config.properties");
-			InputStream fis = TestBase.class.getResourceAsStream("/config.properties");
+			FileInputStream fis = new FileInputStream(configPath);
+			//InputStream fis = TestBase.class.getResourceAsStream("/config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException fnfe) {
 			fnfe.printStackTrace();
@@ -47,10 +47,10 @@ public class TestBase {
 	public WebDriver initialization() {
 		String browserName = prop.getProperty("browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver");
 			driver = new FirefoxDriver();
 		} else {
 			driver = new SafariDriver();
@@ -82,3 +82,27 @@ public class TestBase {
 	}
 
 }
+/*  
+ * == For Windows used only  
+   	public WebDriver initialization() {
+		String browserName = prop.getProperty("browser");
+		if (browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers/chromedriver");
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			System.setProperty("webdriver.gecko.driver", projectPath + "\\Drivers\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		} else {
+			driver = new SafariDriver();
+		}
+		driver.get(prop.getProperty("url"));
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.navigate().refresh();
+		tDriver.set(driver);
+		return getDriver();
+
+	}
+
+
+    */

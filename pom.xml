@@ -13,44 +13,46 @@
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
-	  <properties>
-		    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		    <maven.compiler.source>1.8</maven.compiler.source>
-		    <maven.compiler.target>1.8</maven.compiler.target>
-		     <javaVersion>1.8</javaVersion>
-		    <testngVersion>7.1.0</testngVersion>
-		    <mavenPluginVersion>3.8.1</mavenPluginVersion>
-		    <slf4jVersion>2.0.7</slf4jVersion>
-		    <seleniumVersion>3.141.59</seleniumVersion>
-		    <lombokVersion>1.18.12</lombokVersion> 
-		    <allureVersion>2.24.0</allureVersion>
-		    <poiVersion>4.1.2</poiVersion>
-		    <poiOoxmlVersion>4.1.2</poiOoxmlVersion>
-			<poiOoxmlSchemasVersion>4.1.2</poiOoxmlSchemasVersion>
-		    <poiScratchpadVersion>4.1.2</poiScratchpadVersion> 
-		    <ooxmlSchemasVersion>1.4</ooxmlSchemasVersion>
-		    <commonsIoVersion>2.8.0</commonsIoVersion>
-		    <log4jCoreVersion>2.14.1</log4jCoreVersion>
-		    <log4jApiVersion>2.14.1</log4jApiVersion>
-		    <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
-		    <aspectj.version>1.9.6</aspectj.version>
-		    <ashotVersion>1.5.4</ashotVersion>
-		    
-  		</properties>
-	<dependencies>
-   <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${seleniumVersion}</version>
-        </dependency>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<javaVersion>1.8</javaVersion>
+		<testngVersion>7.1.0</testngVersion>
+		<mavenPluginVersion>3.8.1</mavenPluginVersion>
+		<slf4jVersion>2.0.7</slf4jVersion>
+		<seleniumVersion>3.141.59</seleniumVersion>
+		<lombokVersion>1.18.12</lombokVersion>
+		<allureVersion>2.24.0</allureVersion>
+		<poiVersion>4.1.2</poiVersion>
+		<poiOoxmlVersion>4.1.2</poiOoxmlVersion>
+		<poiOoxmlSchemasVersion>4.1.2</poiOoxmlSchemasVersion>
+		<poiScratchpadVersion>4.1.2</poiScratchpadVersion>
+		<ooxmlSchemasVersion>1.4</ooxmlSchemasVersion>
+		<commonsIoVersion>2.8.0</commonsIoVersion>
+		<log4jCoreVersion>2.14.1</log4jCoreVersion>
+		<log4jApiVersion>2.14.1</log4jApiVersion>
+		<maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+		<!-- <aspectj.version>1.9.5</aspectj.version> -->
+		<ashotVersion>1.5.4</ashotVersion>
 
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testngVersion}</version>
-        </dependency>
-       
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${seleniumVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testngVersion}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
@@ -93,68 +95,70 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 		<dependency>
-    		<groupId>org.slf4j</groupId>
-    		<artifactId>slf4j-api</artifactId>
-    		<version>${slf4jVersion}</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4jVersion}</version>
 		</dependency>
-		  <dependency>
-            <groupId>ru.yandex.qatools.ashot</groupId>
-            <artifactId>ashot</artifactId>
-            <version>${ashotVersion}</version>
-        </dependency>
-		  <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.14.1</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>${ashotVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.14.1</version>
+			<scope>test</scope>
+		</dependency>
 
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>${log4jCoreVersion}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-        </dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4jCoreVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+		</dependency>
+		<!--
                    <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>
                         <version>${aspectj.version}</version>
                     </dependency>
-    </dependencies>
-	  <build>
-            <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            	<plugin>
+                     -->
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven-surefire-plugin-version}</version>
 				<configuration>
-					<suiteXmlFiles> suppress UnresolvedMavenProperty 
-						<suiteXmlFile>FullRegression.xml</suiteXmlFile>
+					<suiteXmlFiles> suppress UnresolvedMavenProperty <suiteXmlFile>
+						FullRegression.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					 <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
+										 <!--<argLine>
+ 	-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar" 
+					</argLine> -->
 				</configuration>
-		
+
 			</plugin>
-        </plugins>
-         <resources>
-        <resource>
-            <directory>resources</directory>
-        </resource>
-    </resources>
-  </build>
-  
+		</plugins>
+		<resources>
+			<resource>
+				<directory>resources</directory>
+			</resource>
+		</resources>
+	</build>
+
 </project>

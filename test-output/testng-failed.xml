@@ -5,23 +5,33 @@
     <listener class-name="com.Analyzer.Transformations"/>
     <listener class-name="com.Analyzer.AllureListeners"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="Desh Board Home Test(failed)">
+  <test thread-count="5" parallel="classes" name="Home Page Test(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.Tests.DeshBoardHomeTest">
+      <class name="com.Tests.HomePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="salseDataTest"/>
           <include name="tearUp"/>
+          <include name="homePageText"/>
+          <include name="loginButtonTest"/>
+          <include name="orderButtonTest"/>
+          <include name="homeButtonTest"/>
+          <include name="tearDown"/>
+          <include name="pageTitleTest"/>
         </methods>
-      </class> <!-- com.Tests.DeshBoardHomeTest -->
+      </class> <!-- com.Tests.HomePageTest -->
     </classes>
-  </test> <!-- Desh Board Home Test(failed) -->
+  </test> <!-- Home Page Test(failed) -->
   <test thread-count="5" parallel="classes" name="Desh Board Order Test(failed)">
     <classes>
       <class name="com.Tests.DeshBoardOrderTest">
         <methods>
           <include name="tearUp"/>
-          <include name="shippingAddress" invocation-numbers="0"/>
+          <include name="orderManueTest"/>
+          <include name="legsSelectionTest"/>
+          <include name="shippingAddress"/>
+          <include name="pageTitleTest"/>
+          <include name="heasdSelectionTest"/>
+          <include name="bodySelectionTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.Tests.DeshBoardOrderTest -->
