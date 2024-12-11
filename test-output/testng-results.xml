@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="0" failed="0" skipped="11">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-10T15:52:15 EST" name="Robotic Applicaion Automated Tess" finished-at="2024-12-10T15:52:17 EST" duration-ms="1149">
+  <suite started-at="2024-12-10T21:22:51 EST" name="Robotic Applicaion Automated Tess" finished-at="2024-12-10T21:23:29 EST" duration-ms="38714">
     <groups>
       <group name="Order Page Functions">
         <method signature="DeshBoardOrderTest.pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@bcef303]" name="pageTitleTest" class="com.Tests.DeshBoardOrderTest"/>
@@ -20,617 +20,137 @@
         <method signature="HomePageTest.pageTitleTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" name="pageTitleTest" class="com.Tests.HomePageTest"/>
       </group> <!-- Home Page Functions -->
     </groups>
-    <test started-at="2024-12-10T15:52:15 EST" name="Home Page Test" finished-at="2024-12-10T15:52:16 EST" duration-ms="364">
+    <test started-at="2024-12-10T21:22:51 EST" name="Home Page Test" finished-at="2024-12-10T21:23:12 EST" duration-ms="21896">
       <class name="com.Tests.HomePageTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="88" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.HomePageTest.tearUp(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:22:51 EST" name="tearUp" finished-at="2024-12-10T21:23:02 EST" duration-ms="11525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="pageTitleTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="pageTitleTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.HomePageTest.tearUp(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="pageTitleTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:02 EST" name="pageTitleTest" finished-at="2024-12-10T21:23:02 EST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:02 EST" name="tearDown" finished-at="2024-12-10T21:23:02 EST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:02 EST" name="tearUp" finished-at="2024-12-10T21:23:06 EST" duration-ms="3270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="homePageText()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="homePageText" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.HomePageTest.tearUp(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="homePageText()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:06 EST" name="homePageText" finished-at="2024-12-10T21:23:06 EST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:06 EST" name="tearDown" finished-at="2024-12-10T21:23:06 EST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:06 EST" name="tearUp" finished-at="2024-12-10T21:23:08 EST" duration-ms="2200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="homeButtonTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="homeButtonTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.HomePageTest.tearUp(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="homeButtonTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:08 EST" name="homeButtonTest" finished-at="2024-12-10T21:23:08 EST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homeButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:08 EST" name="tearDown" finished-at="2024-12-10T21:23:08 EST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:08 EST" name="tearUp" finished-at="2024-12-10T21:23:10 EST" duration-ms="1955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="orderButtonTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="orderButtonTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.HomePageTest.tearUp(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="orderButtonTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:10 EST" name="orderButtonTest" finished-at="2024-12-10T21:23:10 EST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:10 EST" name="tearDown" finished-at="2024-12-10T21:23:10 EST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:10 EST" name="tearUp" finished-at="2024-12-10T21:23:12 EST" duration-ms="2000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="loginButtonTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="loginButtonTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.HomePageTest.tearUp(HomePageTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="loginButtonTest()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:12 EST" name="loginButtonTest" finished-at="2024-12-10T21:23:12 EST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginButtonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.HomePageTest@10a9d961]" started-at="2024-12-10T21:23:12 EST" name="tearDown" finished-at="2024-12-10T21:23:12 EST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Tests.HomePageTest -->
     </test> <!-- Home Page Test -->
-    <test started-at="2024-12-10T15:52:16 EST" name="Desh Board Order Test" finished-at="2024-12-10T15:52:17 EST" duration-ms="735">
+    <test started-at="2024-12-10T21:23:12 EST" name="Desh Board Order Test" finished-at="2024-12-10T21:23:29 EST" duration-ms="16796">
       <class name="com.Tests.DeshBoardOrderTest">
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="2" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:12 EST" name="tearUp" finished-at="2024-12-10T21:23:15 EST" duration-ms="2452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="pageTitleTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="pageTitleTest()[pri:1, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:15 EST" name="pageTitleTest" finished-at="2024-12-10T21:23:15 EST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:15 EST" name="tearDown" finished-at="2024-12-10T21:23:15 EST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:15 EST" name="tearUp" finished-at="2024-12-10T21:23:17 EST" duration-ms="2139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="orderManueTest()[pri:2, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="orderManueTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="orderManueTest()[pri:2, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:17 EST" name="orderManueTest" finished-at="2024-12-10T21:23:17 EST" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderManueTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:17 EST" name="tearDown" finished-at="2024-12-10T21:23:17 EST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:17 EST" name="tearUp" finished-at="2024-12-10T21:23:20 EST" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="heasdSelectionTest()[pri:3, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="heasdSelectionTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="heasdSelectionTest()[pri:3, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:20 EST" name="heasdSelectionTest" finished-at="2024-12-10T21:23:20 EST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- heasdSelectionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:20 EST" name="tearDown" finished-at="2024-12-10T21:23:20 EST" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:20 EST" name="tearUp" finished-at="2024-12-10T21:23:22 EST" duration-ms="2486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="bodySelectionTest()[pri:4, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="bodySelectionTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="bodySelectionTest()[pri:4, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:22 EST" name="bodySelectionTest" finished-at="2024-12-10T21:23:23 EST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bodySelectionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:23 EST" name="tearDown" finished-at="2024-12-10T21:23:23 EST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearUp" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:23 EST" name="tearUp" finished-at="2024-12-10T21:23:25 EST" duration-ms="2254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="legsSelectionTest()[pri:5, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="legsSelectionTest" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="legsSelectionTest()[pri:5, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:25 EST" name="legsSelectionTest" finished-at="2024-12-10T21:23:25 EST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- legsSelectionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:16 EST" name="tearDown" finished-at="2024-12-10T15:52:16 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:25 EST" name="tearDown" finished-at="2024-12-10T21:23:25 EST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:17 EST" name="tearUp" finished-at="2024-12-10T15:52:17 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:25 EST" name="tearUp" finished-at="2024-12-10T21:23:28 EST" duration-ms="2389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method signature="shippingAddress(java.lang.String)[pri:6, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:17 EST" name="shippingAddress" data-provider="getNewData" finished-at="2024-12-10T15:52:17 EST" duration-ms="0" status="SKIP">
+        <test-method signature="shippingAddress(java.lang.String)[pri:6, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:28 EST" name="shippingAddress" data-provider="getNewData" finished-at="2024-12-10T21:23:29 EST" duration-ms="1405" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -638,50 +158,10 @@ at java.base/java.lang.Thread.run(Thread.java:1623)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: MAC
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Khosruzs-MacBook-Pro.local', ip: '2601:41:c201:c9f0:e50e:8f6a:fde0:fccd%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.6.1', java.version: '20.0.2'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
-at java.base/java.util.Optional.orElseGet(Optional.java:364)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.Base.TestBase.initialization(TestBase.java:54)
-at com.Tests.DeshBoardOrderTest.tearUp(DeshBoardOrderTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shippingAddress -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T15:52:17 EST" name="tearDown" finished-at="2024-12-10T15:52:17 EST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Tests.DeshBoardOrderTest@bcef303]" started-at="2024-12-10T21:23:29 EST" name="tearDown" finished-at="2024-12-10T21:23:29 EST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
